@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Грязнова Арина Павловна</h1>
+                        <p class="mb-0 opacity-75">Студент</p>
+                    </div>
+                    <div class="col-auto">
+                        <span class="badge bg-light text-primary">ЭФБО-04-24</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">
+                                <i class="bi bi-code-slash me-1"></i>Проекты
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="diary.html">
+                                <i class="bi bi-newspaper me-1"></i>Дневник
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container my-4">
+            <!-- Projects Header with Filters -->
+            <section class="mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="h3 text-primary mb-0">
+                        <i class="bi bi-folder-fill me-2"></i>Мои проекты
+                    </h2>
+                    <div class="filter-buttons">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-primary filter-btn active" data-filter="all">Все</button>
+                            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="html">Информация</button>
+                            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="js">Развлечения</button>
+                            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="react">Магазин</button>
+                            <button type="button" class="btn btn-outline-primary filter-btn" data-filter="bootstrap">Сайт</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="row g-4" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-tech="html css bootstrap">
+                        <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="1">
+                            <img src="../images/project1.jpg" class="card-img-top" alt="Личный сайт" style="height: 200px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Личный сайт</h5>
+                                <p class="card-text text-muted flex-grow-1">
+                                    Адаптивный веб-сайт-портфолио с современным дизайном и интерактивными элементами.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary tech-badge">HTML</span>
+                                        <span class="badge bg-primary tech-badge">CSS</span>
+                                        <span class="badge bg-primary tech-badge">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-tech="js">
+                        <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="2">
+                            <img src="../images/project2.jpg" class="card-img-top" alt="Todo-приложение" style="height: 200px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Приложение</h5>
+                                <p class="card-text text-muted flex-grow-1">
+                                    Интерактивное приложение для улучшения скорости реакции и развития скорости пальцев.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="mb-2">
+                                        <span class="badge bg-success tech-badge">JavaScript</span>
+                                        <span class="badge bg-success tech-badge">HTML</span>
+                                        <span class="badge bg-success tech-badge">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-tech="react js html">
+                        <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3">
+                            <img src="../images/project3.jpg" class="card-img-top" alt="Интернет-магазин" style="height: 200px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Интернет-магазин</h5>
+                                <p class="card-text text-muted flex-grow-1">
+                                    Заготовка интернет-магазина.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="mb-2">
+                                        <span class="badge bg-info tech-badge">React</span>
+                                        <span class="badge bg-info tech-badge">JavaScript</span>
+                                        <span class="badge bg-info tech-badge">API</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+        </main>
+
+        <!-- Project Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Детали проекта</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modalContent">
+                            <!-- Content will be loaded dynamically -->
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <a href="#" class="btn btn-primary" id="liveDemoLink" target="_blank">Живая демо</a>
+                        <a href="#" class="btn btn-outline-primary" id="sourceCodeLink" target="_blank">Исходный код</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="pages/contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter projects
+                    projectItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-tech').includes(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Modal content
+            const projectModal = document.getElementById('projectModal');
+            projectModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const projectId = button.getAttribute('data-project');
+                
+                // Project data
+                const projects = {
+                    1: {
+                        title: "Личный сайт",
+                        description: "Полнофункциональный адаптивный веб-сайт-портфолио, разработанный с использованием современных технологий фронтенд-разработки. Сайт включает в себя интерактивные элементы, анимации и оптимизирован для различных устройств.",
+                        technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript"],
+                        features: ["Адаптивный дизайн", "Интерактивные элементы:"],
+                        liveDemo: "https://sayuwanjj.github.io/front1/",
+                        sourceCode: "https://github.com/sayuwanjj/front1"
+                    },
+                    2: {
+                        title: "Todo-приложение",
+                        description: "Интерактивное приложение для развития навыков, необходимых для киберспорта",
+                        technologies: ["JavaScript", "HTML5", "CSS3"],
+                        features: ["Скорость реакции", "Критическое мышление"],
+                        liveDemo: "https://invoker-game.com/",
+                        sourceCode: "https://invoker-game.com/"
+                    },
+                    3: {
+                        title: "Интернет-магазин",
+                        description: "Начальная стадия разработки интернет магазина",
+                        technologies: ["React", "JavaScript", "CSS Modules", "REST API"],
+                        features: ["Каталог товаров", "Сырой проект"],
+                        liveDemo: "https://sayuwanjj.github.io/front1/pages/goods.html",
+                        sourceCode: "https://github.com/sayuwanjj/front1"
+                    },
+                };
+                
+                const project = projects[projectId];
+                if (project) {
+                    document.getElementById('projectModalLabel').textContent = project.title;
+                    document.getElementById('liveDemoLink').href = project.liveDemo;
+                    document.getElementById('sourceCodeLink').href = project.sourceCode;
+                    
+                    const modalContent = document.getElementById('modalContent');
+                    modalContent.innerHTML = `
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../images/project${projectId}.jpg" class="img-fluid rounded mb-3" alt="${project.title}">
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Описание:</h6>
+                                <p>${project.description}</p>
+                                
+                                <h6>Технологии:</h6>
+                                <div class="mb-3">
+                                    ${project.technologies.map(tech => `<span class="badge bg-primary me-1 mb-1">${tech}</span>`).join('')}
+                                </div>
+                                
+                                <h6>Основные функции:</h6>
+                                <ul>
+                                    ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
