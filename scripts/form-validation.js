@@ -33,6 +33,7 @@
           if (!re.test(v)) return 'Укажите корректный адрес эл. почты.';
         }
       },
+      
       message: {
         el: document.getElementById('message'),
         err: document.getElementById('messageError'),
