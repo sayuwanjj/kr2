@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты - Портфолио</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Контактная информация Грязновой Арины Павловны. Свяжитесь с нами через форму обратной связи, email или найдите на GitHub.">
+    <meta name="theme-color" content="#0d6efd">
+    <title>Контакты | Портфолио студента</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="canonical" href="https://yourdomain.com/pages/contacts.html">
+    <script src="../scripts/form-validation.js" defer></script>
 </head>
+
 <body class="bg-light">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
     <div class="container-fluid p-0">
         <!-- Header -->
         <header class="bg-primary text-white py-4">
@@ -16,279 +24,115 @@
                 <div class="row align-items-center">
                     <div class="col">
                         <h1 class="h3 mb-1">Грязнова Арина Павловна</h1>
-                        <p class="mb-0 opacity-75">Студент</p>
+                        <p class="mb-0 opacity-75">Тренер</p>
                     </div>
+
                     <div class="col-auto">
-                        <span class="badge bg-light text-primary">ЭФБО-04-24</span>
+                        <span class="fw-bolder">ЭФБО-04-24</span>
                     </div>
                 </div>
             </div>
         </header>
 
-       <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-sticky" aria-label="Основная навигация">
+            <div class="container-fluid container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">
-                                <i class="bi bi-house me-1"></i>Главная
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">
-                                <i class="bi bi-code-slash me-1"></i>Проекты
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="diary.html">
-                                <i class="bi bi-newspaper me-1"></i>Дневник
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contacts.html">
-                                <i class="bi bi-telephone me-1"></i>Контакты
-                            </a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                        <a class="nav-link" href="project.html">Проекты</a>
+                        <a class="nav-link" href="diary.html">Дневник</a>
+                        <a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a>
+                    </div>
                 </div>
             </div>
         </nav>
- 
-        <!-- Main Content -->
-        <main class="container my-4">
-            <!-- Contact Header -->
-            <section class="mb-4 text-center">
-                <h2 class="text-primary">
-                    <i class="bi bi-envelope me-2"></i>Свяжитесь со мной
-                </h2>
-                <p class="text-muted">Буду рада ответить на ваши вопросы и предложения</p>
-            </section>
 
-            <div class="row g-4">
-                <!-- Contact Form -->
-                <div class="col-lg-8">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-light">
-                            <h3 class="card-title h5 mb-0">
-                                <i class="bi bi-chat-dots text-primary me-2"></i>
-                                Напишите мне
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <form id="contactForm" novalidate>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="name" class="form-label">Имя *</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                        <div class="invalid-feedback">
-                                            Пожалуйста, введите ваше имя.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="email" class="form-label">Email *</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                        <div class="invalid-feedback">
-                                            Пожалуйста, введите корректный email адрес.
-                                        </div>
-                                    </div>
-                                </div>
+        <main class="container my-4" id="main">
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h2 class="card-title h5 mb-0">
+                            <i class="bi bi-tools text-primary" aria-hidden="true"></i>
+                            Свяжитесь с нами!
+                        </h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form id="feedbackForm" novalidate>
+                            <fieldset>
+                                <legend>Форма обратной связи</legend>
                                 <div class="mb-3">
-                                    <label for="subject" class="form-label">Тема</label>
-                                    <input type="text" class="form-control" id="subject">
+                                    <label for="name" class="form-label">ФИО <span aria-hidden="true">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" autocomplete="name"
+                                        required placeholder="Иван Иванович Иванов" minlength="2" maxlength="50" aria-describedby="nameError">
+                                    <p class="invalid-feedback d-block" id="nameError" style="display:none"></p>
                                 </div>
+
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Сообщение *</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                                    <div class="invalid-feedback">
-                                        Пожалуйста, введите ваше сообщение.
-                                    </div>
+                                    <label for="email" class="form-label">Адрес эл. почты <span
+                                            aria-hidden="true">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        autocomplete="email" required placeholder="name@example.com"
+                                        aria-describedby="emailError">
+                                    <p class="invalid-feedback d-block" id="emailError" style="display:none"></p>
                                 </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary">
-                                        <i class="bi bi-send me-2"></i>Отправить сообщение
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Contact Information -->
-                <div class="col-lg-4">
-                    <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-light">
-                            <h3 class="card-title h5 mb-0">
-                                <i class="bi bi-info-circle text-primary me-2"></i>
-                                Контактная информация
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <i class="bi bi-envelope-fill text-primary fs-5"></i>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Сообщение <span aria-hidden="true">*</span>
+                                    </label>
+                                    <textarea class="form-control" id="message" name="message" autocomplete="on"
+                                        required placeholder="Мне нужен сайт" rows="3" minlength="10" maxlength="1000"
+                                        aria-describedby="messageError"></textarea>
+                                    <div class="form-text">Минимум 10, максимум 1000 символов.</div>
+                                    <p class="invalid-feedback d-block" id="messageError" style="display:none"></p>
                                 </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6 class="mb-0">Email</h6>
-                                    <a >gryaznova.a.p@edu.mirea.ru</a>
-                                </div>
-                            </div>
 
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <i class="bi bi-github text-dark fs-5"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6 class="mb-0">GitHub</h6>
-                                    <a href="https://github.com/sayuwanjj" class="text-decoration-none" target="_blank">github.com/sayuwanjj</a>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <i class="bi bi-telephone-fill text-success fs-5"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6 class="mb-0">Телефон</h6>
-                                    <a>+7 (916) 222-60-08</a>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <i class="bi bi-geo-alt-fill text-danger fs-5"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6 class="mb-0">Местоположение</h6>
-                                    <span class="text-muted">Москва, Россия</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0">
-                                    <i class="bi bi-linkedin text-primary fs-5"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6 class="mb-0">Telegram</h6>
-                                    <a>saywanj</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Map -->
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-light">
-                            <h3 class="card-title h5 mb-0">
-                                <i class="bi bi-map text-primary me-2"></i>
-                                Местоположение
-                            </h3>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="map-container">
-                                <div class="text-center">
-                                    <i class="bi bi-geo-alt-fill fs-1 mb-2 d-block"></i>
-                                    <span>Москва, Россия</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Contact Cards -->
-            <section class="mt-5">
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card contact-card h-100 text-center">
-                            <div class="card-body">
-                                <i class="bi bi-clock-fill text-primary fs-1 mb-3"></i>
-                                <h5>Время ответа</h5>
-                                <p class="text-muted">Обычно отвечаю в течение 24 часов в рабочие дни</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card contact-card h-100 text-center">
-                            <div class="card-body">
-                                <i class="bi bi-chat-left-text-fill text-success fs-1 mb-3"></i>
-                                <h5>Предпочтительный способ связи</h5>
-                                <p class="text-muted">Email для деловой переписки, Telegram для срочных вопросов</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card contact-card h-100 text-center">
-                            <div class="card-body">
-                                <i class="bi bi-briefcase-fill text-warning fs-1 mb-3"></i>
-                                <h5>Для сотрудничества</h5>
-                                <p class="text-muted">Готова рассмотреть проекты в веб-разработке и IT-тренерстве</p>
-                            </div>
-                        </div>
+                                <button type="submit" class="btn btn-primary" id="submitBtn">Отправить
+                                    сообщение</button>
+                                <p id="successMsg" class="text-success mt-3" role="status" aria-live="polite"
+                                    style="display:none">
+                                    Спасибо! Ваше обращение отправлено.
+                                </p>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </section>
+
+            <section class="mb-5">
+    <h2 class="fw-bold">Контакты:</h2>
+    <div class="mb-3">
+        <p><strong style="color: #0b1020;">Email:</strong> <a href="mailto:gryaznova.a.p@edu.mirea.ru" style="color: #0056b3; font-weight: 600;">gryaznova.a.p@edu.mirea.ru</a></p>
+        <p><strong style="color: #0b1020;">GitHub:</strong> <a href="https://github.com/sayuwanjj" target="_blank" rel="noopener noreferrer" style="color: #0056b3; font-weight: 600;">sayuwanjj</a></p>
+        <p><strong style="color: #0b1020;">Место:</strong> Москва, Россия</p>
+    </div>
+</section>
+
         </main>
 
-        <!-- Footer -->
         <footer class="bg-dark text-white py-4 mt-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2025 Все права защищены.</p>
+                        <p class="mb-0">&copy; 2025 Портфолио студента. Все права защищены.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <a href="pages/contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Form validation
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-            
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                
-                if (form.checkValidity()) {
-                    // Here you would typically send the form data to a server
-                    alert('Сообщение отправлено! Я свяжусь с вами в ближайшее время.');
-                    form.reset();
-                    form.classList.remove('was-validated');
-                } else {
-                    form.classList.add('was-validated');
-                }
-            }, false);
-
-            // Real-time validation
-            const fields = form.querySelectorAll('input, textarea');
-            fields.forEach(field => {
-                field.addEventListener('input', function() {
-                    if (this.checkValidity()) {
-                        this.classList.remove('is-invalid');
-                        this.classList.add('is-valid');
-                    } else {
-                        this.classList.remove('is-valid');
-                        this.classList.add('is-invalid');
-                    }
-                });
-            });
-        });
-
-        // Simple email validation
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
